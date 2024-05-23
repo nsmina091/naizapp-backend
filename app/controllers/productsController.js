@@ -17,6 +17,7 @@ exports.listProducts = async (req, res, next) => {
             ps.id,
             ps.product_id,
             p.name AS product_name,
+            p.status,
             p.description AS product_description,
             ps.offer_price,
             ps.price,
